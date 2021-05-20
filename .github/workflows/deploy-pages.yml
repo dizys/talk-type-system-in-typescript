@@ -25,6 +25,7 @@ jobs:
       - name: Build application
         run: |
           yarn build
+          cp dist/index.html dist/404.html
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
         with:
