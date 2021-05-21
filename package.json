@@ -10,8 +10,9 @@
     "build": "slidev build --base /talk-type-system-in-typescript/"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.11.2",
+    "@slidev/cli": "^0.12.1",
     "@slidev/theme-default": "^0.7.4",
+    "embeddable-monaco": "^1.0.0",
     "js-base64": "^3.6.0"
   }
 }
