@@ -7,7 +7,14 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "[vue]": {
+    "editor.formatOnSave": true,
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+  },
   "cSpell.words": [
+    "Embeddable",
     "seriph",
     "slidev"
   ]

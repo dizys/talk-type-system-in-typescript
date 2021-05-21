@@ -1,14 +1,7 @@
 ---
-# try also 'default' to start simple
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
+theme: default
 background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -71,6 +64,10 @@ h1 {
 }
 </style>
 
+<!--
+hello
+-->
+
 ---
 
 # Navigation
@@ -103,20 +100,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 Use code snippets and get the highlighting directly!
 
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number;
-  firstName: string;
-  lastName: string;
-  role: string;
-}
-
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id);
-  const newUser = {...user, ...update};
-  saveUser(id, newUser);
-}
-```
+<Embeddable height="300" defaultURL="https://embeddable.vercel.app/?lang=typescript&code=aW50ZXJmYWNlIFVzZXIgewogIGlkOiBudW1iZXI7CiAgbmFtZTogc3RyaW5nOwogIGFnZTogbnVtYmVyOwp9CgpmdW5jdGlvbiBnZXRWYWx1ZShvYmosIGtleSkgewogIHJldHVybiBvYmooa2V5KTsKfQoKbGV0IHVzZXIxOiBVc2VyID0ge2lkOiAxLCBuYW1lOiAnYWRtaW4nLCBhZ2U6IDE4fTsKbGV0IHZhbHVlID0gZ2V0VmFsdWUodXNlcjEsICduYW1lJyk7CmNvbnNvbGUubG9nKHZhbHVlKTsK" />
 
 ---
 
@@ -133,9 +117,6 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 <Counter :count="10" />
 ```
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
 Check out [the guides](https://sli.dev/custom/#components) for more.
 
 </div>
@@ -151,8 +132,8 @@ Check out [the guides](https://sli.dev/custom/#components) for more.
 </div>
 
 ---
-
-## class: px-20
+class: px-20
+---
 
 # Themes
 
