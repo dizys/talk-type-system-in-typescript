@@ -80,16 +80,16 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
 
-"@slidev/cli@^0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@slidev/cli/-/cli-0.13.1.tgz#69277a40e3639474dddb088fdd28266585921427"
-  integrity sha512-vHaRwrIu2kpxPlPpE5L/ODwPV2KCESDoJ0KFyAF1Ed4OjJvg0xFpf3ZeZoi8J1NLICFE/ZoXx9KHxxwKfoHTEA==
+"@slidev/cli@^0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@slidev/cli/-/cli-0.13.2.tgz#60a07a49692596c62fdb993d31518867c6cf8a58"
+  integrity sha512-aZbiEjjoLnBKGamcT2UVjHeIyDyYCvCKDhIz+A9ynXGjlFczZ/Ilz/rnlVRM6CTXCzBGP9uDJrv/ZqwHd+hf7Q==
   dependencies:
     "@antfu/utils" "^0.1.6"
     "@iconify/json" "^1.1.338"
-    "@slidev/client" "0.13.1"
-    "@slidev/parser" "0.13.1"
-    "@slidev/types" "0.13.1"
+    "@slidev/client" "0.13.2"
+    "@slidev/parser" "0.13.2"
+    "@slidev/types" "0.13.2"
     "@vitejs/plugin-vue" "^1.2.2"
     "@vue/compiler-sfc" "^3.0.11"
     cli-progress "^3.9.0"
@@ -120,14 +120,14 @@
     windicss "^3.0.9"
     yargs "^17.0.1"
 
-"@slidev/client@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@slidev/client/-/client-0.13.1.tgz#ad3590c111da96663f6a5d2d086a4f1df73793e8"
-  integrity sha512-3GLokPUsJ1PV7E0cBemdLUn9TH9sQ90lmhnFtQnRXQcbzky15Xc1cwzYd5dQmdsIfsa3PlX0RMsdKnaCiXu00Q==
+"@slidev/client@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@slidev/client/-/client-0.13.2.tgz#e6fb4b0c3eba5af55892dad63e180d6a95d403f9"
+  integrity sha512-b+/0lNdvECt3bihZqW+KTzYqJR6YGNNZVyZgmgqoOZDfrPXMDZF2/USI1lopVo6S/YLYaykIOXuOyAaAteBl9g==
   dependencies:
     "@antfu/utils" "^0.1.6"
-    "@slidev/parser" "0.13.1"
-    "@slidev/types" "0.13.1"
+    "@slidev/parser" "0.13.2"
+    "@slidev/types" "0.13.2"
     "@vueuse/core" "^4.11.0"
     "@vueuse/head" "^0.5.1"
     "@vueuse/motion" "^1.5.5"
@@ -145,12 +145,12 @@
     vue-router "^4.0.8"
     windicss "^3.0.9"
 
-"@slidev/parser@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@slidev/parser/-/parser-0.13.1.tgz#b5b563635571fadeddbfd0383c1a6b49aab4ed39"
-  integrity sha512-C0qafa37jf8k3nraCGtClaQfkoGxSUo4R9bbtTQLGmHpLzZyuRbtN8CpuHmDfOupVLB9PWe9NdnXwmOMyiNUkg==
+"@slidev/parser@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@slidev/parser/-/parser-0.13.2.tgz#4da8c389d1755aaa610865796161a6c0beb98623"
+  integrity sha512-8qpiUHrPX272OKs8lk5Co5vt8gHbIFrhlHfCs3aUFWgpghjKyc86Mdc0WK3y/NoSQa8F+VEorfD7EVtdAV1CIQ==
   dependencies:
-    "@slidev/types" "0.13.1"
+    "@slidev/types" "0.13.2"
     js-yaml "^4.1.0"
 
 "@slidev/theme-default@^0.7.4":
@@ -162,10 +162,10 @@
     prism-theme-vars "^0.2.2"
     theme-vitesse "^0.1.11"
 
-"@slidev/types@0.13.1":
-  version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.13.1.tgz#4449b75171a36703c833e5de685c9da1cf6ae780"
-  integrity sha512-qMT53UGcGt6GIv3+iz4CK2ZGvYC4Ujr3FDLWuiEOePNUgkWn0IsO+uO18DCJZkyzXZ/JUhSyl7yMQpvODHZ66Q==
+"@slidev/types@0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.13.2.tgz#91d5742607bb5bcb89bb5c7ab53197072958dafb"
+  integrity sha512-+usZUwdxZOQYawMRV3hbWsrGgS6k5cnJVRemOuV190MpcV/O/fK8xGDFjbj7cNolcc/LJmwnwLmOUJofSAHJJw==
 
 "@vitejs/plugin-vue@^1.2.2":
   version "1.2.2"
@@ -869,6 +869,13 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
+
+embeddable-monaco@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/embeddable-monaco/-/embeddable-monaco-1.0.3.tgz#a0c42d9ccb41c7b584282a7c50e7b845177b6e03"
+  integrity sha512-7/KZ5KajOilrF1lHG31uo2hnm/7DNZEyiwkWqUxUnp96Dy/HfBUMoiusXX4vieSDrOMkgx/8/VLp4EoHElh4sQ==
+  dependencies:
+    js-base64 "^3.6.0"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
