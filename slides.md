@@ -104,7 +104,7 @@ Use code snippets and get the highlighting directly!
 
 <Embeddable height="300" sourceURL="https://embeddable.vercel.app/?lang=typescript&code=aW50ZXJmYWNlIFVzZXIgewogIGlkOiBudW1iZXI7CiAgbmFtZTogc3RyaW5nOwogIGFnZTogbnVtYmVyOwp9CgpmdW5jdGlvbiBnZXRWYWx1ZShvYmosIGtleSkgewogIHJldHVybiBvYmooa2V5KTsKfQoKbGV0IHVzZXIxOiBVc2VyID0ge2lkOiAxLCBuYW1lOiAnYWRtaW4nLCBhZ2U6IDE4fTsKbGV0IHZhbHVlID0gZ2V0VmFsdWUodXNlcjEsICduYW1lJyk7CmNvbnNvbGUubG9nKHZhbHVlKTsK" lineNumbers="off" />
 
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
+<arrow v-click x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
 ---
 

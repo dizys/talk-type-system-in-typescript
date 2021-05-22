@@ -6,7 +6,7 @@
   "license": "GPL-3.0",
   "private": true,
   "scripts": {
-    "dev": "slidev slides",
+    "dev": "slidev --open",
     "build": "slidev build --base /talk-type-system-in-typescript/",
     "test-build": "slidev build",
     "test-start": "http-server dist"
