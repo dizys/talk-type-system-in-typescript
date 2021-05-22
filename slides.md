@@ -1,7 +1,14 @@
 ---
+# try also 'default' to start simple
 theme: default
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
+# apply any windi css classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
 highlighter: shiki
+# some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -21,7 +28,7 @@ Presentation slides for developers
 
 <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
   class="abs-br m-6 text-xl icon-btn opacity-50 !border-none !hover:text-white">
-<carbon-logo-github />
+  <carbon-logo-github />
 </a>
 
 <!--
@@ -64,10 +71,6 @@ h1 {
 }
 </style>
 
-<!--
-hello
--->
-
 ---
 
 # Navigation
@@ -76,19 +79,18 @@ Hover on the bottom-left corner to see the navigation's controls panel, [learn m
 
 ### Keyboard Shortcuts
 
-|                                     |                             |
-| ----------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd> | next animation or slide     |
-| <kbd>left</kbd>                     | previous animation or slide |
-| <kbd>up</kbd>                       | previous slide              |
-| <kbd>down</kbd>                     | next slide                  |
+|     |     |
+| --- | --- |
+| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
+| <kbd>left</kbd> | previous animation or slide |
+| <kbd>up</kbd> | previous slide |
+| <kbd>down</kbd> | next slide |
 
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
   src="https://sli.dev/assets/arrow-bottom-left.svg"
 />
-
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
 
 ---
@@ -100,7 +102,9 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 Use code snippets and get the highlighting directly!
 
-<Embeddable height="300" sourceURL="https://embeddable.vercel.app/?lang=typescript&code=aW50ZXJmYWNlIFVzZXIgewogIGlkOiBudW1iZXI7CiAgbmFtZTogc3RyaW5nOwogIGFnZTogbnVtYmVyOwp9CgpmdW5jdGlvbiBnZXRWYWx1ZShvYmosIGtleSkgewogIHJldHVybiBvYmooa2V5KTsKfQoKbGV0IHVzZXIxOiBVc2VyID0ge2lkOiAxLCBuYW1lOiAnYWRtaW4nLCBhZ2U6IDE4fTsKbGV0IHZhbHVlID0gZ2V0VmFsdWUodXNlcjEsICduYW1lJyk7CmNvbnNvbGUubG9nKHZhbHVlKTsK" lineNumbers="off" />
+<!-- <Embeddable height="300" sourceURL="https://embeddable.vercel.app/?lang=typescript&code=aW50ZXJmYWNlIFVzZXIgewogIGlkOiBudW1iZXI7CiAgbmFtZTogc3RyaW5nOwogIGFnZTogbnVtYmVyOwp9CgpmdW5jdGlvbiBnZXRWYWx1ZShvYmosIGtleSkgewogIHJldHVybiBvYmooa2V5KTsKfQoKbGV0IHVzZXIxOiBVc2VyID0ge2lkOiAxLCBuYW1lOiAnYWRtaW4nLCBhZ2U6IDE4fTsKbGV0IHZhbHVlID0gZ2V0VmFsdWUodXNlcjEsICduYW1lJyk7CmNvbnNvbGUubG9nKHZhbHVlKTsK" lineNumbers="off" /> -->
+
+<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
 ---
 
@@ -111,13 +115,16 @@ Use code snippets and get the highlighting directly!
 
 You can use Vue components directly inside your slides.
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly use. And add your custom components are also super easy.
+We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
 
 ```html
 <Counter :count="10" />
 ```
 
-Check out [the guides](https://sli.dev/custom/#components) for more.
+<!-- ./components/Counter.vue -->
+<Counter :count="10" m="t-4" />
+
+Check out [the guides](https://sli.dev/builtin/components.html) for more.
 
 </div>
 <div>
@@ -130,6 +137,7 @@ Check out [the guides](https://sli.dev/custom/#components) for more.
 
 </div>
 </div>
+
 
 ---
 class: px-20
@@ -163,13 +171,20 @@ Read more about [How to use a theme](https://sli.dev/themes/use.html) and
 check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
 
 ---
+preload: false
+---
 
 # Animations
 
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
 ```html
-<div v-motion :initial="{ x: -80 }" :enter="{ x: 0 }">Slidev</div>
+<div
+  v-motion
+  :initial="{ x: -80 }"
+  :enter="{ x: 0 }">
+  Slidev
+</div>
 ```
 
 <div class="w-60 relative mt-6">
@@ -242,7 +257,6 @@ LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-
 $$
 \begin{array}{c}
 
@@ -284,6 +298,7 @@ C -->|Two| E[Result 2]
 </div>
 
 [Learn More](https://sli.dev/guide/syntax.html#diagrams)
+
 
 ---
 layout: center

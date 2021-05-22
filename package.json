@@ -12,9 +12,8 @@
     "test-start": "http-server dist"
   },
   "devDependencies": {
-    "@slidev/cli": "0.11.2",
+    "@slidev/cli": "^0.13.1",
     "@slidev/theme-default": "^0.7.4",
-    "embeddable-monaco": "^1.0.0",
     "http-server": "^0.12.3",
     "js-base64": "^3.6.0"
   }
