@@ -8,22 +8,22 @@ background: ./images/typescript-bg.png
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
-title: Type System in TypeScript
+title: Type System within TypeScript
 # some information about the slides, markdown enabled
 info: |
-  ## Type System in TypeScript
+  ## Type System within TypeScript
 
   Explore a powerful type system through this talk if you have never used TypeScript before.
 
   by Ziyang Zeng
 ---
 
-# <span style="color:#ff7171">Type</span> System in <span style="color:#ff7171">Type</span>Script
+# <span class="ts-title">Type</span> System within <span class="ts-title">Type</span>Script
 
 Explore Rich Expressiveness within a Powerful Type System!
 
 <div class="pt-12">
-  <span v-click @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
+  <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
     Start the journey <carbon:arrow-right class="inline"/>
   </span>
 </div>
@@ -33,15 +33,16 @@ Explore Rich Expressiveness within a Powerful Type System!
   Jun 2021 @ Hotstar
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
+<style>
+.ts-title {
+  color: #fc5404;
+}
+</style>
 ---
 
-# What is Slidev?
+# What is <span class="ts-title">TypeScript</span>?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Roughly, JavaScript + type system.
 
 - 📝 **Text-based** - focus on the content with Markdown, and then style them later
 - 🎨 **Themable** - theme can be shared and used with npm packages
@@ -62,9 +63,8 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
 
 <style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+.ts-title {
+  background-image: linear-gradient(45deg, #4EC5D4, #146b8c);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -122,9 +122,6 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 ```html
 <Counter :count="10" />
 ```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
 
 Check out [the guides](https://sli.dev/builtin/components.html) for more.
 
