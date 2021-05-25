@@ -80,16 +80,16 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.12.tgz#431ec342a7195622f86688bbda82e3166ce8cb28"
   integrity sha512-6RglhutqrGFMO1MNUXp95RBuYIuc8wTnMAV5MUhLmjTOy78ncwOw7RgeQ/HeymkKXRhZd0s2DNrM1rL7unk3MQ==
 
-"@slidev/cli@^0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@slidev/cli/-/cli-0.13.2.tgz#60a07a49692596c62fdb993d31518867c6cf8a58"
-  integrity sha512-aZbiEjjoLnBKGamcT2UVjHeIyDyYCvCKDhIz+A9ynXGjlFczZ/Ilz/rnlVRM6CTXCzBGP9uDJrv/ZqwHd+hf7Q==
+"@slidev/cli@^0.13.10":
+  version "0.13.10"
+  resolved "https://registry.yarnpkg.com/@slidev/cli/-/cli-0.13.10.tgz#67bdcf3703c759b573fb5b60066f72da4c9bfa1d"
+  integrity sha512-e5rUy3MS2iaf7c697GuKE/hkBgZohVBz/9CRc/yXm3IqE6OY16OWWLuQ9pnm2l5/TSLUTZSJ3WBMLG9ovI1Kcg==
   dependencies:
     "@antfu/utils" "^0.1.6"
     "@iconify/json" "^1.1.338"
-    "@slidev/client" "0.13.2"
-    "@slidev/parser" "0.13.2"
-    "@slidev/types" "0.13.2"
+    "@slidev/client" "0.13.10"
+    "@slidev/parser" "0.13.10"
+    "@slidev/types" "0.13.10"
     "@vitejs/plugin-vue" "^1.2.2"
     "@vue/compiler-sfc" "^3.0.11"
     cli-progress "^3.9.0"
@@ -98,7 +98,7 @@
     fast-glob "^3.2.5"
     fs-extra "^10.0.0"
     jiti "^1.9.2"
-    js-base64 "^3.6.0"
+    js-base64 "^3.6.1"
     katex "^0.13.11"
     kolorist "^1.4.1"
     markdown-it "^12.0.6"
@@ -108,32 +108,33 @@
     pdf-lib "^1.16.0"
     prismjs "^1.23.0"
     prompts "^2.4.1"
+    resolve "^1.20.0"
     shiki "^0.9.4"
     sirv "^1.0.11"
     vite "^2.3.3"
-    vite-plugin-components "^0.8.4"
+    vite-plugin-components "^0.9.2"
     vite-plugin-icons "^0.5.1"
     vite-plugin-md "^0.6.7"
     vite-plugin-remote-assets "^0.2.2"
-    vite-plugin-windicss "^0.16.0-beta.22"
+    vite-plugin-windicss "^0.16.0-beta.23"
     vue "^3.0.11"
     windicss "^3.0.9"
     yargs "^17.0.1"
 
-"@slidev/client@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@slidev/client/-/client-0.13.2.tgz#e6fb4b0c3eba5af55892dad63e180d6a95d403f9"
-  integrity sha512-b+/0lNdvECt3bihZqW+KTzYqJR6YGNNZVyZgmgqoOZDfrPXMDZF2/USI1lopVo6S/YLYaykIOXuOyAaAteBl9g==
+"@slidev/client@0.13.10":
+  version "0.13.10"
+  resolved "https://registry.yarnpkg.com/@slidev/client/-/client-0.13.10.tgz#136a06f3240036743ac3d3258f7bd47e365234cc"
+  integrity sha512-fd8EfgLpCQ9navjRcb7V3wM3uqvp0bcnMyhNM/oakJ51q+skFBydrEOjsKvEnOdirZXCKt42CuBLNfFn36mFOQ==
   dependencies:
     "@antfu/utils" "^0.1.6"
-    "@slidev/parser" "0.13.2"
-    "@slidev/types" "0.13.2"
+    "@slidev/parser" "0.13.10"
+    "@slidev/types" "0.13.10"
     "@vueuse/core" "^4.11.0"
     "@vueuse/head" "^0.5.1"
     "@vueuse/motion" "^1.5.5"
     codemirror "^5.61.1"
     file-saver "^2.0.5"
-    js-base64 "^3.6.0"
+    js-base64 "^3.6.1"
     js-yaml "^4.1.0"
     katex "^0.13.11"
     mermaid "8.5.0"
@@ -141,16 +142,17 @@
     nanoid "^3.1.23"
     prettier "^2.3.0"
     recordrtc "^5.6.2"
+    resolve "^1.20.0"
     vue "^3.0.11"
     vue-router "^4.0.8"
     windicss "^3.0.9"
 
-"@slidev/parser@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@slidev/parser/-/parser-0.13.2.tgz#4da8c389d1755aaa610865796161a6c0beb98623"
-  integrity sha512-8qpiUHrPX272OKs8lk5Co5vt8gHbIFrhlHfCs3aUFWgpghjKyc86Mdc0WK3y/NoSQa8F+VEorfD7EVtdAV1CIQ==
+"@slidev/parser@0.13.10":
+  version "0.13.10"
+  resolved "https://registry.yarnpkg.com/@slidev/parser/-/parser-0.13.10.tgz#2e3f7a5a8721539e2840c1ac2fccdbcf70999c98"
+  integrity sha512-q94f8923G13pKKlBxSnMB1mT3wT1u6ps9/SG8TotIG802MOF5sDjtMoJSV7OP2q8UOU0T/oyNoh4jlaBMLycqw==
   dependencies:
-    "@slidev/types" "0.13.2"
+    "@slidev/types" "0.13.10"
     js-yaml "^4.1.0"
 
 "@slidev/theme-default@^0.7.4":
@@ -162,10 +164,10 @@
     prism-theme-vars "^0.2.2"
     theme-vitesse "^0.1.11"
 
-"@slidev/types@0.13.2":
-  version "0.13.2"
-  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.13.2.tgz#91d5742607bb5bcb89bb5c7ab53197072958dafb"
-  integrity sha512-+usZUwdxZOQYawMRV3hbWsrGgS6k5cnJVRemOuV190MpcV/O/fK8xGDFjbj7cNolcc/LJmwnwLmOUJofSAHJJw==
+"@slidev/types@0.13.10":
+  version "0.13.10"
+  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.13.10.tgz#a12c921df190e20cc4b0670df370c00fcab89f69"
+  integrity sha512-G6Dpe/cljtzSZXqv1UsbYvk9TTdQURi1Kq+T+PN/Gvz934lU4++M8Sb1FQIIVoo9DodVn5wxzkgqTVhi1vfPow==
 
 "@vitejs/plugin-vue@^1.2.2":
   version "1.2.2"
@@ -284,10 +286,10 @@
   dependencies:
     vue-demi "*"
 
-"@windicss/plugin-utils@0.16.0-beta.22":
-  version "0.16.0-beta.22"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-0.16.0-beta.22.tgz#fe6f11af4169517f5747ae6fe39e8a608b7e36d6"
-  integrity sha512-+OGayqsaWIQzcavpj4oq8+0q6UnDA6OdI2M/MsC9CWGqB+2DgYSsT51tDcypJRYDQE5FEL0+yFvcDuwsnynVAw==
+"@windicss/plugin-utils@0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-0.16.0.tgz#660586b95ed3394b07f9970b2be77f681ea1ecd4"
+  integrity sha512-Gu6iHqFnqfxE0J8Oa74+2W5L2052ptqEHBtPaOuXOFgIMTJAT2KoXb6v+/Z0ldHsxVC1q+MSsom877SJ0cL2iA==
   dependencies:
     "@antfu/utils" "^0.1.6"
     debug "^4.3.2"
@@ -1224,6 +1226,11 @@ js-base64@^3.6.0:
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.6.0.tgz#773e1de628f4f298d65a7e9842c50244751f5756"
   integrity sha512-wVdUBYQeY2gY73RIlPrysvpYx+2vheGo8Y1SNQv/BzHToWpAZzJU7Z6uheKMAe+GLSBig5/Ps2nxg/8tRB73xg==
 
+js-base64@^3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.6.1.tgz#555aae398b74694b4037af1f8a5a6209d170efbe"
+  integrity sha512-Frdq2+tRRGLQUIQOgsIGSCd1VePCS2fsddTG5dTCqR0JHgltXWfsxnY0gIXPoMeRmdom6Oyq+UMOFg5suduOjQ==
+
 js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
@@ -1679,7 +1686,7 @@ requires-port@^1.0.0:
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-resolve@^1.19.0:
+resolve@^1.19.0, resolve@^1.20.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
   integrity sha512-wENBPt4ySzg4ybFQW2TT1zMQucPK95HSh/nq2CFTZVOGut2+pQvSsgtda4d26YrYcr067wjbmzOG8byDPBX63A==
@@ -1964,14 +1971,15 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-vite-plugin-components@^0.8.4:
-  version "0.8.4"
-  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.8.4.tgz#158a4d69c8106c36944a2e284df3ad0169ae1017"
-  integrity sha512-h6/FNBKBXc4TIcHxnFYxa4+aBGDZusqp/6Ra3LBvwolwFuX6k8qPsBbXkBP0I+UwOkyHw9iU2xJ4rdYBGyN+0Q==
+vite-plugin-components@^0.9.2:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-components/-/vite-plugin-components-0.9.2.tgz#6ff00e5e2a9355372d56af5c8be3bafdf3c5bfce"
+  integrity sha512-DCl6GboJN0CJWjPiGrj6wbUV4m983lqwKpleS4IZwztK+BYKZ+e5m8Ph58RyVq/yDv0w8OOdWrmycshagR+DEQ==
   dependencies:
     chokidar "^3.5.1"
     debug "^4.3.2"
     fast-glob "^3.2.5"
+    magic-string "^0.25.7"
     minimatch "^3.0.4"
 
 vite-plugin-icons@^0.5.1:
@@ -2000,12 +2008,12 @@ vite-plugin-remote-assets@^0.2.2:
     fs-extra "^9.1.0"
     magic-string "^0.25.7"
 
-vite-plugin-windicss@^0.16.0-beta.22:
-  version "0.16.0-beta.22"
-  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-0.16.0-beta.22.tgz#2b78c563c6271d1f96d0533775a4507cdfdfa22e"
-  integrity sha512-7EW4krZglxIefZ3cVMYKVBFLLUxjZI9R4Z1n3vRNELLJur+Hl62IP28YeDbGs2LfxjOg4nN9kwYO5gUAgNFXLQ==
+vite-plugin-windicss@^0.16.0-beta.23:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-0.16.0.tgz#d3ef9da930cc33aec162b9b760f4d42835eb353c"
+  integrity sha512-XaYnPNKsq2yZ5Ph39ZmPvtsTheyVsGSXibTOq/kWCKcXyLxIinTL6xQvLsagjF8QzHpHPF4NbsFvvGtO81gxgA==
   dependencies:
-    "@windicss/plugin-utils" "0.16.0-beta.22"
+    "@windicss/plugin-utils" "0.16.0"
     chalk "^4.1.1"
     debug "^4.3.2"
     windicss "^3.0.9"
