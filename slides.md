@@ -87,7 +87,7 @@ The type system defines the interpretation of binary numbers for a language, map
 
 # What is <a target="_blank" href="https://www.typescriptlang.org"><span class="ts-title">TypeScript</span></a>?
 
-- TypeScript ≈ <ins>JavaScript</ins> + <ins>type system</ins>
+- TypeScript ≈ <ins>JavaScript</ins> + <ins>static typing</ins>
 - Superset of JavaScript that transpiles to JavaScript
 - Expressive type system with <span class="golden-font">SOA</span> type inference capabilities
 - "JavaScript that scales."
