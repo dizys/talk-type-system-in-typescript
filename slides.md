@@ -18,9 +18,9 @@ info: |
   by Ziyang Zeng
 ---
 
-# <span class="ts-title">Type</span> System within <span class="ts-title">Type</span>Script
+# <span class="golden-font">Type</span> System within <span class="golden-font">Type</span>Script
 
-Explore Rich Expressiveness within a Powerful Type System!
+Explore the Rich Expressiveness from a Powerful Type System!
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -34,33 +34,108 @@ Explore Rich Expressiveness within a Powerful Type System!
 </div>
 
 <style>
-.ts-title {
-  color: #fc5404;
+.golden-font {
+  background-image: linear-gradient(45deg, #f9b208, #f98404);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
 ---
 
-# What is <span class="ts-title">TypeScript</span>?
+# Type System
 
-Roughly, JavaScript + type system.
+The type system defines the interpretation of binary numbers for a language, mapping the values onto the underlying hardware.
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+<div grid="~ cols-2 gap-4">
+<div>
 
-<br>
-<br>
+### Static vs Dynamic type system
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+**Static typing**
+- Variables have types.
+- Compilers ensures (at compile time) that type rules are obeyed.
+
+**Dynamic typing**
+- Variables do not have types, values do.
+- Compilers/Interpreters ensures (at run time) that type rules are obeyed.
+
+</div>
+<div>
+
+
+### Strong vs Weak typing
+
+**Strong typing**
+
+- Does not allow variables to be used in a way inconsistent with their types.
+
+**Weak typing**
+
+- Allows many ways to bypass the type system (e.g., pointer arithmetic).
+
+
+</div>
+</div>
+
+---
+
+
+<div style="position: absolute; bottom: 50px;">
+
+# What is <a target="_blank" href="https://www.typescriptlang.org"><span class="ts-title">TypeScript</span></a>?
+
+- TypeScript ≈ <ins>JavaScript</ins> + <ins>type system</ins>
+- Superset of JavaScript that transpiles to JavaScript
+- Expressive type system with <span class="golden-font">SOA</span> type inference capabilities
+- "JavaScript that scales."
+
+</div>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
 Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
+
+<style>
+.ts-title {
+  background-image: linear-gradient(45deg, #4EC5D4, #146b8c);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.golden-font {
+  background-image: linear-gradient(45deg, #f9b208, #f98404);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+
+# Popularity
+
+| # Ranking | Programming Language | Percentage |
+| - | -------------------- | ---------- |
+| 1 | JavaScript | 18.756% |
+| 2 | Python | 16.628% |
+| 3 | Java | 11.680% |
+| 4 | Go | 7.829% |
+| 5 | Ruby | 7.588% |
+| 6 | C++ | 6.985% |
+| 7 | <span class="ts-title">TypeScript</span> | 6.604% |
+| 8 | PHP | 5.081% |
+
+<span style="font-size: 14px; opacity: 0.3;">Courtesy of https://madnight.github.io/githut/#/pull_requests/2021/1</span>
+
 
 <style>
 .ts-title {
@@ -104,7 +179,11 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 Use code snippets and get the highlighting directly!
 
-<Embeddable height="300" sourceURL="https://embeddable.vercel.app/?lang=typescript&code=aW50ZXJmYWNlIFVzZXIgewogIGlkOiBudW1iZXI7CiAgbmFtZTogc3RyaW5nOwogIGFnZTogbnVtYmVyOwp9CgpmdW5jdGlvbiBnZXRWYWx1ZShvYmosIGtleSkgewogIHJldHVybiBvYmooa2V5KTsKfQoKbGV0IHVzZXIxOiBVc2VyID0ge2lkOiAxLCBuYW1lOiAnYWRtaW4nLCBhZ2U6IDE4fTsKbGV0IHZhbHVlID0gZ2V0VmFsdWUodXNlcjEsICduYW1lJyk7CmNvbnNvbGUubG9nKHZhbHVlKTsK" lineNumbers="off" />
+```ts {monaco} {height:'350px'}
+import {} from '@slidev/cli';
+
+
+```
 
 <arrow v-click x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
