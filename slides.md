@@ -20,7 +20,7 @@ info: |
 
 # <span class="golden-font">Type</span> System within <span class="golden-font">Type</span>Script
 
-Explore the Rich Expressiveness from a Powerful Type System!
+Ziyang: Explore the Rich Expressiveness from a Powerful Type System!
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 p-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -76,6 +76,9 @@ The type system defines the interpretation of binary numbers for a language, map
 
 - Allows many ways to bypass the type system (e.g., pointer arithmetic).
 
+### Subtype
+
+A relation between types. e.g., `{a, b, c}` is a subtype of `{a, c}`, `a|c` is a subtype of `a|b|c`.
 
 </div>
 </div>
@@ -147,6 +150,94 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
+
+# Where does TypeScript advance?
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+### Dynamic typing
+
+In JavaScript:
+
+```js
+let user = {
+  id: 1,
+  username: "admin",
+  password: "123456",
+}
+
+let company = {
+  name: "hotstar",
+  users: [user, ...],
+  running: true
+}
+
+function getValue(obj, key) {
+  return obj[key]
+}
+
+let username = getValue(user, "username")
+let isCompanyRunning = getValue(company, "running")
+```
+
+</div>
+<div>
+
+### Static typing but lack expressiveness
+
+In Golang:
+
+```go
+user := User{
+  Id: 1,
+  Username: "admin",
+  Password: "123456"
+}
+
+// ...
+
+func getValue(obj interface{}, key string) interface{} {
+	objVal := reflect.ValueOf(obj)
+	return objVal.FieldByName(key).Interface()
+}
+
+userId := getValue(user, "Id").(int)
+isCompanyRunning := getValue(company, "Running").(bool)
+```
+
+</div>
+</div>
+
+---
+
+# A little peek at TypeScript's solution
+
+```ts {monaco} {height: '400px'}
+let user = {
+  id: 1,
+  username: "admin",
+  password: "123456",
+}
+
+let company = {
+  name: "hotstar",
+  users: [user],
+  running: true
+}
+
+function getValue<T extends object, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key]
+}
+```
+---
+
+# TypeScript Types
+
+
+
 
 ---
 
