@@ -272,12 +272,9 @@ function getValue<T extends object, K extends keyof T>(obj: T, key: K): T[K] {
 </div>
 <div>
 
-```ts {1-3|5|all}
-let a = true;
-let b = 1;
-let c = "string";
-
+```ts {all|1|2|3-6|8-10}
 let arr = [1, 2, 3];
+let tuple = [1, 2, 3] as const;
 let obj = {
   a: "aa",
   v: "sdd",
@@ -287,6 +284,8 @@ function test(arg1: string, arg2: number) {
   return Number(arg1) + arg2;
 }
 ```
+
+<PlaygroundLink href="https://embeddable.vercel.app/?code=bGV0IGFyciA9IFsxLCAyLCAzXTsKbGV0IHR1cGxlID0gWzEsIDIsIDNdIGFzIGNvbnN0OwpsZXQgb2JqID0gewogIGE6ICJhYSIsCiAgdjogInNkZCIsCn07CgpmdW5jdGlvbiB0ZXN0KGFyZzE6IHN0cmluZywgYXJnMjogbnVtYmVyKSB7CiAgcmV0dXJuIE51bWJlcihhcmcxKSArIGFyZzI7Cn0K" />
 
 </div>
 </div>
