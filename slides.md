@@ -464,6 +464,15 @@ type MatchPair<S extends string> = S extends `[${infer A},${infer B}]` ? [A, B] 
 type Pair1 = MatchPair<'[1,2]'>;
 type Pair2 = MatchPair<'[foo,bar]'>;
 
+```
+
+---
+
+# Template Literal Types
+
+THE most expressive literal typing in the world so far.
+
+```ts {monaco} {height: '380px'}
 type Trim<S extends string> =
   S extends ` ${infer T}` ? Trim<T> :
   S extends `${infer T} ` ? Trim<T> :
@@ -478,7 +487,6 @@ type Join<T extends unknown[], D extends string> =
   string;
 type Joined1 = Join<[1, 2, 3, 4], '.'>;
 type Joined2 = Join<['foo', 'bar', 'baz'], '-'>;
-
 ```
 
 ---
@@ -486,7 +494,6 @@ type Joined2 = Join<['foo', 'bar', 'baz'], '-'>;
 # Type Frankenstein
 
 ```ts {monaco} {height: '380px'}
-
 type PathImpl<T, Key extends keyof T> =
   Key extends string
   ? T[Key] extends Record<string, any>
@@ -527,6 +534,7 @@ const object = {
 
 getValue(object, "account.");
 
+//
 ```
 
 <span style="font-size: 14px; opacity: 0.3;">Courtesy of https://github.com/ghoullier/awesome-template-literal-types</span>
