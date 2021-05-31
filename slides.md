@@ -541,6 +541,32 @@ getValue(object, "account.");
 
 ---
 
+# Use case: Routes
+
+```ts {monaco} {height: '380px'}
+type ExtractRouteParams<T extends string> =
+  string extends T
+  ? Record<string, string>
+  : T extends `${infer Start}:${infer Param}/${infer Rest}`
+  ? {[k in Param | keyof ExtractRouteParams<Rest>]: string}
+  : T extends `${infer Start}:${infer Param}`
+  ? {[k in Param]: string}
+  : {};
+
+declare function handleGet<Route extends string>(
+  route: Route,
+  handler: (params: ExtractRouteParams<Route>) => void
+): void;
+
+handleGet('/posts/:postId/:commentId', (params) => {
+  console.log(params);
+});
+```
+
+<span style="font-size: 14px; opacity: 0.3;">Courtesy of https://github.com/ghoullier/awesome-template-literal-types</span>
+
+---
+
 # Turing Completeness
 
 ---
