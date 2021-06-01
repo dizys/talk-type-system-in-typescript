@@ -470,7 +470,7 @@ type Pair2 = MatchPair<'[foo,bar]'>;
 
 # Template Literal Types
 
-THE most expressive literal typing in the world so far.
+For instance, `${string}-${string}`. THE most expressive literal typing in the world so far.
 
 ```ts {monaco} {height: '380px'}
 type Trim<S extends string> =
@@ -488,6 +488,34 @@ type Join<T extends unknown[], D extends string> =
 type Joined1 = Join<[1, 2, 3, 4], '.'>;
 type Joined2 = Join<['foo', 'bar', 'baz'], '-'>;
 ```
+
+---
+
+# Turing Completeness
+
+TypeScript's type system used to be Turing-complete (version `2.2`) by indirect recursive generic type invocation. See the [proof](https://github.com/microsoft/TypeScript/issues/14833).
+
+A Turing complete type system would allow infinite self-referencing.
+
+```ts
+type Foo<T extends "true", B> = {
+  "true": Foo<T, Foo<T, B>>
+}[T];
+
+let f: Foo<"true", {}> = null!;
+```
+
+- Then in `2.3`, depth of recursive invocation was limited to 100 by PR [#15011](https://github.com/microsoft/TypeScript/pull/15011).
+
+- In `3.7`, direct recursive invocation is introduced but still with depth limitation in place.
+
+```ts
+type Json = string | number | boolean | null | Json[] | {[key: string]: Json};
+```
+
+<br>
+
+So in short, in its current state, TypeScript is <span text="red-500">NOT</span> but almost Turing-complete.
 
 ---
 
@@ -541,7 +569,7 @@ getValue(object, "account.");
 
 ---
 
-# Use case: Routes
+# Practical Use Case: Routes
 
 ```ts {monaco} {height: '380px'}
 type ExtractRouteParams<T extends string> =
@@ -565,9 +593,6 @@ handleGet('/posts/:postId/:commentId', (params) => {
 
 <span style="font-size: 14px; opacity: 0.3;">Courtesy of https://github.com/ghoullier/awesome-template-literal-types</span>
 
----
-
-# Turing Completeness
 
 ---
 
