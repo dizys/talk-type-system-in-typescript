@@ -310,6 +310,9 @@ function test(arg1: string, arg2: number) {
 
 `|`: "may be any one of those types"
 
+<div grid="~ cols-3 gap-4">
+<div class="col-span-2">
+
 ```ts {monaco} {height: '380px'}
 interface TextMessage {
   type: "text";
@@ -327,6 +330,12 @@ function send(message?: TextMessage | Hotshot) {
 
 }
 ```
+
+</div>
+<div>
+<img dark="bg-white bg-opacity-30 rounded-lg" src="https://www.dizy.cc/talk-type-system-in-typescript/images/venn-union-type.svg" />
+</div>
+</div>
 
 ---
 
@@ -352,6 +361,10 @@ type Union2 = string | never;
 
 `&`: The intersection of type sets.
 
+
+<div grid="~ cols-3 gap-4">
+<div class="col-span-2">
+
 ```ts {monaco} {height: '380px'}
 type I1 = string & unknown;
 
@@ -373,6 +386,12 @@ let fbi: FBI = {
   // ?
 }
 ```
+
+</div>
+<div>
+<img dark="bg-white bg-opacity-30 rounded-lg" src="https://www.dizy.cc/talk-type-system-in-typescript/images/venn-intersection-type.svg" />
+</div>
+</div>
 
 ---
 
