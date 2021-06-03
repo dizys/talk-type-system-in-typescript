@@ -10,6 +10,7 @@ class: 'text-center'
 highlighter: shiki
 title: Type System within TypeScript
 # some information about the slides, markdown enabled
+monaco: true
 info: |
   ## Type System within TypeScript
 
@@ -692,7 +693,7 @@ It supports a subset of SQL, including SELECT (with conditions and joins), INSER
 
 Play a text adventure in vscode with the typescript type system.
 
-<img src="https://dizy.cc/talk-type-system-in-typescript/images/screenshot-adventure-game.png" style="border-radius: 5px" />
+<img src="https://dizy.cc/talk-type-system-in-typescript/images/screenshot-adventure-game.png" style="border-radius: 10px" />
 
 [Original article](https://ricklove.me/typescript-type-system-adventure) by Rick Love.
 
