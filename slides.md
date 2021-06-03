@@ -521,7 +521,10 @@ So in short, in its current state, TypeScript's type system is <span text="red-5
 
 # Type Frankenstein
 
-```ts {monaco} {height: '380px'}
+<div grid="~ cols-3 gap-4">
+<div class="col-span-2">
+
+```ts {monaco} {height: '410px'}
 type PathImpl<T, Key extends keyof T> =
   Key extends string
   ? T[Key] extends Record<string, any>
@@ -564,8 +567,11 @@ getValue(object, "account.");
 
 //
 ```
-
-<span style="font-size: 14px; opacity: 0.3;">Courtesy of https://github.com/ghoullier/awesome-template-literal-types</span>
+</div>
+<div>
+<Tweet id="1309489079378219009" scale="0.9" />
+</div>
+</div>
 
 ---
 
@@ -592,7 +598,6 @@ handleGet('/posts/:postId/:commentId', (params) => {
 ```
 
 <span style="font-size: 14px; opacity: 0.3;">Courtesy of https://github.com/ghoullier/awesome-template-literal-types</span>
-
 
 ---
 
@@ -633,6 +638,39 @@ Now supports TypeScript 4.1 🎉
   margin-bottom: 5px;
 }
 </style>
+
+---
+
+# Fun Projects: [ts-sql](https://github.com/codemix/ts-sql)
+
+<div>
+
+```
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄               ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌             ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌
+ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀              ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌
+     ▐░▌     ▐░▌                       ▐░▌          ▐░▌       ▐░▌▐░▌
+     ▐░▌     ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌       ▐░▌▐░▌
+     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░▌
+     ▐░▌      ▀▀▀▀▀▀▀▀▀█░▌ ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌
+     ▐░▌               ▐░▌                       ▐░▌▐░░░░░░░░░░░▌▐░▌
+     ▐░▌      ▄▄▄▄▄▄▄▄▄█░▌              ▄▄▄▄▄▄▄▄▄█░▌ ▀▀▀▀▀▀█░█▀▀ ▐░█▄▄▄▄▄▄▄▄▄
+     ▐░▌     ▐░░░░░░░░░░░▌             ▐░░░░░░░░░░░▌        ▐░▌  ▐░░░░░░░░░░░▌
+      ▀       ▀▀▀▀▀▀▀▀▀▀▀               ▀▀▀▀▀▀▀▀▀▀▀          ▀    ▀▀▀▀▀▀▀▀▀▀▀
+```
+This is a SQL database implemented purely in TypeScript type annotations.
+This means that it operates solely on types - you define a "database" (just a type annotation) and then query it using some more type annotations.
+
+It supports a subset of SQL, including SELECT (with conditions and joins), INSERT, UPDATE and DELETE statements.
+
+<PlaygroundLink href="./links/ts-sql.html" />
+
+</div>
+
+---
+
+# Fun Projects: Text-Based Adventure Game
+
 
 ---
 layout: center
