@@ -671,6 +671,11 @@ It supports a subset of SQL, including SELECT (with conditions and joins), INSER
 
 # Fun Projects: Text-Based Adventure Game
 
+Play a text adventure in vscode with the typescript type system.
+
+<img src="https://dizy.cc/talk-type-system-in-typescript/images/screenshot-adventure-game.png" style="border-radius: 5px" />
+
+[Original article](https://ricklove.me/typescript-type-system-adventure) by Rick Love.
 
 ---
 layout: center
