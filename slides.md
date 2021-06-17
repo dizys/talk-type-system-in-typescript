@@ -746,4 +746,4 @@ class: text-center
 
 # Learn More
 
-[TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) / [GitHub Repo](https://github.com/microsoft/typescript)
+[TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) / [GitHub Repo](https://github.com/microsoft/typescript) / [This Slide](https://github.com/dizys/talk-type-system-in-typescript)
