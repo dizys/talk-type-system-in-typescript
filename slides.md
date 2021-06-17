@@ -307,6 +307,48 @@ function test(arg1: string, arg2: number) {
 
 ---
 
+# TypeScript Basics
+
+### Basic types
+
+<div style="display:flex;flex-direction:row;justify-content:space-between">
+<div>
+
+- <span class="faded-font">Boolean</span>
+- <span class="faded-font">Number</span>
+- <span class="faded-font">String</span>
+- Array
+- Tuple
+- Enum
+- Null and Undefined
+- Object/Interface: <span class="faded-font">optional properties</span>
+- Function
+- Void
+- <span class="golden-font">Unknown</span> = U
+- <span class="golden-font">Never</span> = ∅
+- <span class="golden-font">Any</span>
+
+</div>
+<img style="height:400px" src="https://www.dizy.cc/talk-type-system-in-typescript/images/typescript-types.svg" />
+</div>
+
+
+<style>
+.faded-font {
+  opacity: 0.5;
+}
+.golden-font {
+  background-image: linear-gradient(45deg, #f9b208, #f98404);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+
 # Union Type
 
 `|`: "may be any one of those types"
