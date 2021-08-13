@@ -12,8 +12,8 @@
     "test-start": "http-server dist"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.16.1",
-    "@slidev/theme-default": "^0.14.2",
+    "@slidev/cli": "^0.22.7",
+    "@slidev/theme-default": "^0.19.1",
     "http-server": "^0.12.3",
     "js-base64": "^3.6.0"
   }
